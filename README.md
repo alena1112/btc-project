@@ -19,7 +19,7 @@ Application using H2 in-memory database. Database scheme is located in `sql_sche
 1. Alter database host, port, location in `application.properties`
 2. Build the project
 ```
-   gradle clean build
+   ./gradlew clean build
 ```
 3. Setting a JVM Argument in order to change default timezone
 ```
@@ -31,7 +31,10 @@ Application using H2 in-memory database. Database scheme is located in `sql_sche
 
 Application contains integration and junit tests.
 1. Alter database host, port, location in `application-testing.properties`
-2. Run classes `BTCIntegrationTest`, `BTCRecordRepositoryTest`, `BTCRecordServiceBeanTest`
+2. Run command
+```
+   ./gradlew test
+```
 
 ## Web API
 1. In order to save btc record need to use this endpoint:

@@ -2,7 +2,7 @@
 
 BTC Project helps to save btc records and show history
 
-* [Repository](https://)
+* [Repository](https://github.com/alena1112/btc-project)
 
 # Structure
 * `com/anymind/btc/exception` - contains base class exceptions
@@ -17,7 +17,11 @@ Application using H2 in-memory database. Database scheme is located in `sql_sche
 
 ## Run
 1. Alter database host, port, location in `application.properties`
-2. Setting a JVM Argument in order to change default timezone
+2. Build the project
+```
+   gradle clean build
+```
+3. Setting a JVM Argument in order to change default timezone
 ```
    -Duser.timezone=UTC
 ```

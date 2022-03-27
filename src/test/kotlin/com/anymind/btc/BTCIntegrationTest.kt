@@ -9,6 +9,9 @@ import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.http.*
 import org.springframework.test.context.ActiveProfiles
 
+/**
+ * Class provides testing base Web API operations
+ */
 @ActiveProfiles("testing")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class BTCIntegrationTest(@Autowired val restTemplate: TestRestTemplate) {

@@ -9,6 +9,9 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager
 import java.text.SimpleDateFormat
 
+/**
+ * Class provides testing BTCRecordRepository
+ */
 @DataJpaTest
 class BTCRecordRepositoryTest @Autowired constructor(
     val entityManager: TestEntityManager,

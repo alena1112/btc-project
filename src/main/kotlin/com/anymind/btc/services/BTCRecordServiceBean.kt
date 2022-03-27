@@ -12,6 +12,9 @@ import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import java.util.*
 
+/**
+ * Class implements interface BTCRecordService
+ */
 @Service
 @Transactional
 class BTCRecordServiceBean(private val btcRecordRepository: BTCRecordRepository): BTCRecordService {
@@ -48,6 +51,9 @@ class BTCRecordServiceBean(private val btcRecordRepository: BTCRecordRepository)
         return record
     }
 
+    /**
+     * Method summarizes amount of previous dtc records in order to show current balance in every datetime
+     */
     private fun summarizeAmountInRecords(records: List<BTCRecordDTO>, previousTotalAmount: Double) : List<BTCRecordDTO> {
         val result: MutableList<BTCRecordDTO> = mutableListOf()
         val iterator = records.iterator()

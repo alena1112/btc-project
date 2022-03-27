@@ -1,6 +1,6 @@
 package com.anymind.btc.exception
 
-import com.anymind.btc.resources.dto.RestResponse
+import com.anymind.btc.resources.RestResponse
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler
 
+/**
+ * Class provides centralized exception handling for specific work with them
+ */
 @ControllerAdvice
 class BTCExceptionHandler : ResponseEntityExceptionHandler() {
     @ExceptionHandler(BTCException::class)

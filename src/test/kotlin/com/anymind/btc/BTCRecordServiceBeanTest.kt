@@ -18,6 +18,9 @@ import org.mockito.Mockito.*
 import org.mockito.junit.jupiter.MockitoExtension
 import java.text.SimpleDateFormat
 
+/**
+ * Class provides testing business logic of BTCRecordServiceBean class
+ */
 @ExtendWith(MockitoExtension::class)
 internal class BTCRecordServiceBeanTest {
     @Mock

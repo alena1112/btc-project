@@ -3,6 +3,9 @@ package com.anymind.btc.model
 import java.util.*
 import javax.persistence.*
 
+/**
+ * Entity class provides work with btc records and stored them in database
+ */
 @Entity
 @Table(name = "btc_record")
 class BTCRecord(

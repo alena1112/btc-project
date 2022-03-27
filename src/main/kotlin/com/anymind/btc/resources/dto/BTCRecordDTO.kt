@@ -3,6 +3,9 @@ package com.anymind.btc.resources.dto
 import java.math.RoundingMode
 import java.util.*
 
+/**
+ * DTO class represents btc record
+ */
 data class BTCRecordDTO(
     val datetime: Date,
     val amount: Double

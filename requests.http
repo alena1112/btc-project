@@ -1,0 +1,45 @@
+### Save first record
+POST http://localhost:8085/btc/save
+Content-Type: application/json
+
+{
+  "datetime": "2019-10-05T14:45:05+01:00",
+  "amount": 10
+}
+
+### Save second record
+POST http://localhost:8085/btc/save
+Content-Type: application/json
+
+{
+  "datetime": "2019-10-05T16:05:01+01:00",
+  "amount": 100.1
+}
+
+### Save second record
+POST http://localhost:8085/btc/save
+Content-Type: application/json
+
+{
+  "datetime": "2019-10-05T20:05:01+03:00",
+  "amount": 55
+}
+
+### Save second record
+POST http://localhost:8085/btc/save
+Content-Type: application/json
+
+{
+  "datetime": "2019-10-05T21:55:01+03:00",
+  "amount": 1000
+}
+
+### Get all records
+
+POST http://localhost:8085/btc/history
+Content-Type: application/json
+
+{
+  "startDatetime": "2019-10-05T18:00:00+03:00",
+  "endDatetime": "2019-10-06T00:05:00+05:00"
+}
